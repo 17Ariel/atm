@@ -1,0 +1,36 @@
+.account-detail {
+    height: 100px;
+    width: 600px;
+    display: grid;
+    gap: 4px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+h1{
+    font-size: 1rem;
+    padding: 8px 12px;
+}
+.balance {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.deposit {
+    grid-column: 2/3;
+        grid-row: 1/2;
+}
+
+.withdraw {
+    grid-column: 1/2;
+        grid-row: 2/3;
+}
+
+.transfer {
+grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+
+
+
