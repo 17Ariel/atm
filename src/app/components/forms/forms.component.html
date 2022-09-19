@@ -1,7 +1,7 @@
 <div class="atm-box" >
     <app-account-details [balance]="balance" [withdraw]="withdraw" [deposit]="deposit" [transfer]="transfer"></app-account-details>
     <form (ngSubmit)="onSubmit()">
-        <div *ngIf="isError">
+        <div *ngIf="isError" [ngStyle]="{'color':'red'}">
             <span>Invalid amount</span>
         </div>
         <input type="number" placeholder="Amount" [(ngModel)]="amount" name="amount" required>
